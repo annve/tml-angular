@@ -1,0 +1,5 @@
+<h1>ngIf</h1>
+<p>ngIf wordt gebruikt om elementen al dan niet aan de DOM-tree toe te voegen</p>
+<input type="number" name="txtLeeftijd" [(ngModel)]="leeftijd" min="0" max = "150">
+<div *ngIf="leeftijd < 18">Kom binnen enkele jaren nog eens terug</div>
+<div *ngIf="leeftijd > 55">Iemand met uw ervaring kijkt hier toch niet naar?!?</div>
