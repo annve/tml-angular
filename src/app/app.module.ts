@@ -20,6 +20,7 @@ import { Vbrouting0Component } from './voorbeelden/vbrouting/vbrouting0.componen
 import { VbroutingReqparamComponent } from './voorbeelden/vbrouting/vbrouting-reqparam.component';
 import { VbDirectiveComponent } from './voorbeelden/vbdirective/vbdirective.component';
 import { HighlightDirective } from './voorbeelden/vbdirective/vbdirective.directive';
+import { ExponentialStrengthPipe } from './voorbeelden/vbpipes02/exponential-strength.pipe';
 
 
 // zie vbrouting.module.ts
@@ -71,6 +72,7 @@ const appRoutes: Routes = [
     VbroutingReqparamComponent,
     HighlightDirective,
     VbDirectiveComponent,
+    ExponentialStrengthPipe,
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(appRoutes)

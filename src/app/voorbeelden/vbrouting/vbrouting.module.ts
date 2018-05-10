@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
-import { HeroesAllComponent } from '../../oefeningen/oefheroes/heroes-all/heroes-all.component';
 import { VbDatabindingComponent } from '../vbdatabinding/vbdatabinding.component';
 import { VbIfComponent } from '../vbif/vbif.component';
 import { VbroutingReqparamComponent } from './vbrouting-reqparam.component';
 import { PageNotFoundComponent } from './page-not-found.component';
+import { Vb00Component } from '../vb00/vb00.component';
 
 const appRoutes: Routes = [
   {
     path: 'heroes',   // path begint niet met slash!
-    component: HeroesAllComponent
+    component: Vb00Component
   },
   {
     path: 'vb01',
