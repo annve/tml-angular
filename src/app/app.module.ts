@@ -18,6 +18,8 @@ import { VbScholenService01 } from './voorbeelden/vbservice/vbservice01';
 import { PageNotFoundComponent } from './voorbeelden/vbrouting/page-not-found.component';
 import { Vbrouting0Component } from './voorbeelden/vbrouting/vbrouting0.component';
 import { VbroutingReqparamComponent } from './voorbeelden/vbrouting/vbrouting-reqparam.component';
+import { VbDirectiveComponent } from './voorbeelden/vbdirective/vbdirective.component';
+import { HighlightDirective } from './voorbeelden/vbdirective/vbdirective.directive';
 
 
 // zie vbrouting.module.ts
@@ -66,7 +68,9 @@ const appRoutes: Routes = [
     VbServiceComponent01,
     PageNotFoundComponent,
     Vbrouting0Component,
-    VbroutingReqparamComponent
+    VbroutingReqparamComponent,
+    HighlightDirective,
+    VbDirectiveComponent,
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(appRoutes)
