@@ -1,0 +1,8 @@
+<h1>ngSwitch</h1>
+<p>Het is nu {{ huidigUur() }}u.</p>
+<div [ngSwitch]="huidigUur()">
+  <span *ngSwitchCase="8">Tussen 8 en 9 begint een werkmens te leven (of ben ik 12u te vroeg?)</span>
+  <span *ngSwitchCase="9">Tussen 9 en 10 moet je eens naar de koffie zien</span>
+  <span *ngSwitchCase="12">Tussen 12 en 1 eet iedereen</span>
+  <span *ngSwitchDefault>Werk maar rustig verder, je bent goed bezig (ook al zeggen ze van nie) ...</span>
+</div>

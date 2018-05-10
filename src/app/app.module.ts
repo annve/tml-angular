@@ -7,6 +7,7 @@ import { Vb00Component } from './voorbeelden/vb00/vb00.component';
 import { VbDatabindingComponent } from './voorbeelden/vbdatabinding/vbdatabinding.component';
 import { VbIfComponent } from './voorbeelden/vbif/vbif.component';
 import { VbForComponent } from './voorbeelden/vbfor/vbfor.component';
+import { VbSwitchComponent } from './voorbeelden/vbswitch/vbswitch.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VbForComponent } from './voorbeelden/vbfor/vbfor.component';
     Vb00Component,
     VbDatabindingComponent,
     VbIfComponent,
-    VbForComponent
+    VbForComponent,
+    VbSwitchComponent
   ],
   imports: [
     BrowserModule, FormsModule
