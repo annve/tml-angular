@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { Vb00Component } from './voorbeelden/vb00/vb00.component';
@@ -21,6 +22,7 @@ import { VbroutingReqparamComponent } from './voorbeelden/vbrouting/vbrouting-re
 import { VbDirectiveComponent } from './voorbeelden/vbdirective/vbdirective.component';
 import { HighlightDirective } from './voorbeelden/vbdirective/vbdirective.directive';
 import { ExponentialStrengthPipe } from './voorbeelden/vbpipes02/exponential-strength.pipe';
+import { VbAnimationComponent } from './voorbeelden/vbanimation/vb-animation/vb-animation.component';
 
 
 // zie vbrouting.module.ts
@@ -73,9 +75,10 @@ const appRoutes: Routes = [
     HighlightDirective,
     VbDirectiveComponent,
     ExponentialStrengthPipe,
+    VbAnimationComponent,
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule
   ],
 
   providers: [VbScholenService01],
