@@ -1,0 +1,15 @@
+<h1>HttpClient</h1>
+<p>In dit voorbeeld gebruiken we een HttpClient om de gegevens op te vragen van <a href="https://www.w3schools.com/angular/customers.php">https://www.w3schools.com/angular/customers.php</a></p>
+Denk eraan:
+  <ul>
+    <li>in app.module.ts:
+      <ul>
+        <li><code >import {{'{'}}HttpClientModule{{'}'}} from '@angular/common/http';</code></li>
+        <li><code> imports: [..., HttpClientModule]</code></li>
+      </ul>
+    </li>
+    <li>in xxxx.component.ts: <code >import {{'{'}}HttpClient{{'}'}} from '@angular/common/http';</code></li>
+  </ul>
+<table>
+  <tr *ngFor="let customer of customers; let i=index"><td>{{i+1}}</td><td>{{customer.Name}}</td><td>{{customer.City}}</td><td>{{customer.Country}}</td></tr>
+</table>
