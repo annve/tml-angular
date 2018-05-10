@@ -1,0 +1,13 @@
+<h1>Routing met requestparameter</h1>
+<p>Om een requestparameter met naam rp op te vragen in een component, moeten we de <code>ActivatedRoute</code> gebruiken:</p>
+<ul>
+    <li><code>import {{"{"}} ActivatedRoute {{"}"}} from '@angular/router';</code></li>
+    <li><code>ActivatedRoute</code> injecteren en waarde van requestparameter opvragen:<br/>
+        <code>rqp: string;<br/>
+        constructor(private route: ActivatedRoute) {{"{"}}
+                  this.rqp = this.route.snapshot.paramMap.get('rp');
+        {{"}"}}
+        </code>
+    </li>
+</ul>
+Waarde van de doorgegeven requestparameter id: {{ reqParamId }}

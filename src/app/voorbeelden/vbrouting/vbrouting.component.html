@@ -1,0 +1,24 @@
+<div class="linkerdiv">
+<h1>Routing</h1>
+<p>zie <a href="https://angular.io/guide/router">https://angular.io/guide/router</a></p>
+<p>in index.html</p>
+<code>&lt;base href="/"&gt;</code>
+<p>in app.module.ts</p>
+<ul>
+  <li><code>import {{'{'}} RouterModule, Routes {{'}'}} from '@angular/router';</code></li>
+  <li>definitie van een array appRoutes met Route-objecten</li>
+  <li><code>@NgModule(..., imports: [..., RouterModule.forRoot( appRoutes )], ...)</code></li>
+</ul>
+<p>Na element <code>&lt;router-outlet&gt;</code> wordt de component getoond die volgens de router bij het opgevraagde path hoort</p>
+<p>Bij de a-tag kun je een <i>routerLink</i> definiëren om een link te creëren naar het opgegeven path</p>
+</div>
+<nav>
+<a routerLink="/heroes">Toon alle heroes</a>
+<a routerLink="/vb01">Eerste voorbeeld</a>
+<a routerLink="/vb02">Tweede voorbeeld</a>
+<a routerLink="/">Home</a>
+</nav>
+<div class="rechterdiv">
+<h4>Hieronder komt de component waarnaar de router ons doorstuurt</h4>
+<router-outlet></router-outlet>
+</div>
