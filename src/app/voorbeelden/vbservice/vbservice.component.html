@@ -1,0 +1,11 @@
+<h1>De schoolgegevens worden opgevraagd via een Service</h1>
+<p>Een <strong>service</strong> is een klasse die operaties aanbiedt (bv om gegevens in een databank te beheren)
+zodat deze door verschillende andere klassen (bv componenten) herbruikt kunnen worden</p>
+
+<h2>Secundaire scholen in Antwerpen</h2>
+<p>bron: <a href="http://datasets.antwerpen.be/v4/gis/secundaireschool.json">http://datasets.antwerpen.be/v4/gis/secundaireschool.json</a></p>
+<table>
+  <thead><th>naam</th><th>adres</th><th>postcode</th><th>gemeente</th></thead>
+  <tr *ngFor="let school of scholen"><td>{{school.naam}}</td>
+  <td>{{school.adres}}</td><td>{{school.postcode}}</td><td>{{school.gemeente}}</td></tr>
+</table>
