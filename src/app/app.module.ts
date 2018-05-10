@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { Vb00Component } from './voorbeelden/vb00/vb00.component';
 import { VbDatabindingComponent } from './voorbeelden/vbdatabinding/vbdatabinding.component';
 import { VbIfComponent } from './voorbeelden/vbif/vbif.component';
+import { VbForComponent } from './voorbeelden/vbfor/vbfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Vb00Component,
     VbDatabindingComponent,
-    VbIfComponent
+    VbIfComponent,
+    VbForComponent
   ],
   imports: [
     BrowserModule, FormsModule

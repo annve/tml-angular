@@ -1,0 +1,10 @@
+<h1>ngFor</h1>
+<p>ngFor voegt een element toe aan de DOM-tree voor elk element in een lijst</p>
+<h2>Piraten</h2>
+<ul *ngIf="piraten.length > 0">
+  <li  *ngFor="let piraat of piraten">{{ piraat }}</li>
+</ul>
+
+<h4>uitbreiding (oef)</h4>
+Voeg een formulier met een knop en een tekstvak toe.
+Als de gebruiker op de knop klikt, wordt een piraat met de ingetikte naam toegevoegd aan de lijst.
