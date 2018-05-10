@@ -1,0 +1,25 @@
+<h1>Pipes</h1>
+<p>Pipes bepalen in welk formaat de gegevens getoond moeten worden:</p>
+
+<h4>uppercase</h4>
+<p>{{ naam | uppercase }}</p>
+
+<h4>currency</h4>
+<p>{{ bedrag }}</p>
+<p>{{ bedrag | currency }}</p>
+<p>{{ bedrag | currency:"EUR" }}</p>
+<p>{{ bedrag | currency:"EUR":symbol-narrow }}</p>
+
+<h4>percent</h4>
+<p>{{ bedrag }}</p>
+<p>{{ bedrag | percent}}</p>
+
+<h4>date</h4>
+<p>{{ datum | date }}</p>
+<p>{{ datum | date:"dd/MM/yyyy"}}</p>
+<p>{{ datum | date:datumFormaat}} <button (click)="toggleDatumFormaat()">Toggle datumformaat</button></p>
+
+<h4>chaining</h4>
+<p>{{ datum | date:"dd MMM yyyy" | uppercase }}</p>
+
+
