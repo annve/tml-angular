@@ -1,0 +1,21 @@
+<h1>Template driven form met validation</h1>
+<p>Angular 4 voegt het novalidate attribuut toe aan elke form</p>
+<form #frmGebruiker="ngForm">
+  <p>Gebruikersnaam:
+    <input type="text" name="naam" #gebruiker="ngModel" [(ngModel)]="user.naam" required>
+    <span style="color:red" *ngIf="gebruiker.dirty  && gebruiker.invalid">
+      <span *ngIf="gebruiker.errors.required">Gebruikersnaam moet ingevuld worden.</span>
+    </span>
+  </p>
+  <br>
+  <p>E-mail:
+    <!-- merk attribuut email op bij volgend element om Angular te laten controleren of 
+    de ingevoerde waarde een geldig e-mailadres is -->     
+    <input type="email" name="email" [(ngModel)]="user.emailadres" #emailadr="ngModel" required email>
+    <span style="color:red" *ngIf="emailadr.dirty && emailadr.invalid">
+      <span *ngIf="emailadr.errors.required">E-mail moet ingevuld worden.</span>
+      <span *ngIf="!emailadr.errors.required && emailadr.errors.email">Dit e-mail adres is niet geldig.</span>
+    </span>
+  </p>
+  <input type="submit" [disabled]="!frmGebruiker.form.valid" />
+</form>

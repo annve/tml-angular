@@ -9,6 +9,7 @@ import { VbIfComponent } from './voorbeelden/vbif/vbif.component';
 import { VbForComponent } from './voorbeelden/vbfor/vbfor.component';
 import { VbSwitchComponent } from './voorbeelden/vbswitch/vbswitch.component';
 import { VbPipesComponent } from './voorbeelden/vbpipes/vbpipes.component';
+import { VbFormValidationComponent } from './voorbeelden/vbformvalidation/form-validation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VbPipesComponent } from './voorbeelden/vbpipes/vbpipes.component';
     VbIfComponent,
     VbForComponent,
     VbSwitchComponent,
-    VbPipesComponent
+    VbPipesComponent,
+    VbFormValidationComponent
   ],
   imports: [
     BrowserModule, FormsModule
