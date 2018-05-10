@@ -12,8 +12,8 @@ import { VbSwitchComponent } from './voorbeelden/vbswitch/vbswitch.component';
 import { VbPipesComponent } from './voorbeelden/vbpipes/vbpipes.component';
 import { VbFormValidationComponent } from './voorbeelden/vbformvalidation/form-validation.component';
 import { VbHttpComponent } from './voorbeelden/vbhttp/vbhttp.component';
-import { VbServiceComponent03 } from './voorbeelden/vbservice/vbservice03.component';
-import { VbScholenService03 } from './voorbeelden/vbservice/vbservice03';
+import { VbServiceComponent01 } from './voorbeelden/vbservice/vbservice01.component';
+import { VbScholenService01 } from './voorbeelden/vbservice/vbservice01';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,13 @@ import { VbScholenService03 } from './voorbeelden/vbservice/vbservice03';
     VbPipesComponent,
     VbFormValidationComponent,
     VbHttpComponent,
-    VbServiceComponent03
+    VbServiceComponent01
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
   ],
 
-  providers: [VbScholenService03],
+  providers: [VbScholenService01],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
