@@ -20,6 +20,7 @@ import {  trigger,  state,  style,  animate,  transition } from '@angular/animat
     ])
   ]
 })
+
 export class VbAnimationComponent implements OnInit {
   private state: string = 'true';
   constructor() { }

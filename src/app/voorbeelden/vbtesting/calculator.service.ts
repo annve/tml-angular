@@ -6,5 +6,6 @@ import { Injectable } from '@angular/core';
 export class CalculatorService {
   public sum(a: any, b: any): number {
     return parseInt(a) + parseInt(b);
+    
   }
 }
