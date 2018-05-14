@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<label for="chbBeschikbaar">enkel beschikbare helden tonen</label><input type="checkbox" id="chbBeschikbaar" [(ngModel)]="toonBeschikbaar" />
+<ul class="heroes">
+    <span *ngFor="let hero of heroes">
+      <li *ngIf="!toonBeschikbaar || hero.isAvailable" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </li>
+    </span>
+  </ul>
+  <p *ngIf="heroes && heroes.length >= 3">Er zijn veel helden!</p>
+  <p>{{selectedHero.name}} is geselecteerd</p>
