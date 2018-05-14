@@ -1,0 +1,15 @@
+<div>
+  <h1>{{ title }}</h1>
+  <form name="frm"  #frmHiLo>
+    <!-- TODO: toon eigen foutmelding als geen invoer in tekstvak ingegeven is -->
+    <!-- TODO: toon fouten die bij tekstvak horen als de gebruiker het tekstvak gewijzigd heeft en het tekstvak ongeldige gegevens bevat -->
+    <label for="gok">Uw gok (1-100): </label>
+    <input #nr type="number" min="1" max="100" name="gok" required [(ngModel)]="gok" placeholder="uw gok" (focus)="nr.select();">
+    <br>TODO: remove this: {{nr.className}}<br>
+    <!-- TODO: maak gok-knop onbeschikbaar als getal geraden is of als de gegevens in het formulier ongeldig zijn -->
+    <input type="submit" value="gok" (click)="verwerkGok();nr.focus();" />
+    <input type="submit" value="opnieuw" (click)="reset();nr.focus();nr.value='';" />
+    <p>{{ tip }}</p>
+    <p>Aantal beurten: {{ aantalBeurten() }}</p>
+  </form>
+</div>
