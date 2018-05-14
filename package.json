@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
-"typedoc": "typedoc"
-
+    "typedoc": "typedoc"
   },
   "private": true,
   "dependencies": {

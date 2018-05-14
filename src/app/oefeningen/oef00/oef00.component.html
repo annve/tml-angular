@@ -1,0 +1,11 @@
+<div>
+  <label for="nrAantal">Aantal:</label>
+  <input id="nrAantal" type="number" [(ngModel)]="aantal" />
+  <br/>
+  <label for="nrPrijs">Eenheidsprijs:</label>
+  <input id="nrPrijs" type="number" [(ngModel)]="prijs" step="0.01"/>
+  <br/>
+  <p>Totaal:
+    <span [innerHTML]="aantal * prijs"></span>
+  </p>
+</div>
