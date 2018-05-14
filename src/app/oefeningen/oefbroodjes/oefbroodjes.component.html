@@ -1,0 +1,30 @@
+<div>
+  <h1>{{ title }}</h1>
+  <label>type:
+    <select [(ngModel)]="gekozenBroodje">
+      <option *ngFor="let b of broodjes" [ngValue]="b">{{b.naam}}</option>
+    </select>
+  </label>
+  <label>aantal:
+    <!-- TODO: bind tekstvak aan var -->
+    <input type="number">
+  </label>
+  <!-- TODO: methode bestel moet uitgevoerd worden als gebruiker op knop klikt -->
+  <input type="button" value="Bestellen" >
+  <div *ngIf="bestelling.bestellijnen.length > 0">
+  <table>
+    <tr>
+      <th>naam</th>
+      <th>prijs</th>
+      <th>aantal</th>
+    </tr>
+    <tr *ngFor="let b of bestelling.bestellijnen">
+      <td>{{b.broodje.naam}}</td>
+      <td>{{b.broodje.prijs | currency:'EUR': 2}}</td>
+      <td>{{b.aantal}}</td>
+    </tr>
+  </table>
+  <!-- TODO: toon totaalprijs -->
+  De totaalprijs is 
+</div>
+</div>
