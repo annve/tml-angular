@@ -1,0 +1,12 @@
+<h1>template reference variabele</h1>
+<form>
+    <!-- <label>Naam: <input type="text" name="txtPiraat" [(ngModel)]="nieuwePiraat" placeholder="piratennaam"></label><br/> 
+    <button (click)="voegToe()">Toevoegen</button> -->
+    <label>Naam: <input type="text" name="txtPiraat" #nieuwePiraat placeholder="piratennaam"></label><br/>
+    <button (click)="voegToe(nieuwePiraat.value)">Toevoegen</button>
+</form>
+
+<h2>Piraten</h2>
+<ul *ngIf="piraten.length > 0">
+  <li  *ngFor="let piraat of piraten">{{ piraat }}</li>
+</ul>
