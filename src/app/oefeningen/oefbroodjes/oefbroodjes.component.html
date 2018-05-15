@@ -6,11 +6,9 @@
     </select>
   </label>
   <label>aantal:
-    <!-- TODO: bind tekstvak aan var -->
-    <input type="number">
+    <input type="number" [(ngModel)]="aantal">
   </label>
-  <!-- TODO: methode bestel moet uitgevoerd worden als gebruiker op knop klikt -->
-  <input type="button" value="Bestellen" >
+  <input type="button" value="Bestellen" (click)="bestel();">
   <div *ngIf="bestelling.bestellijnen.length > 0">
   <table>
     <tr>
@@ -24,7 +22,6 @@
       <td>{{b.aantal}}</td>
     </tr>
   </table>
-  <!-- TODO: toon totaalprijs -->
-  De totaalprijs is 
+  De totaalprijs is {{totaalprijs() |currency:'EUR':2}}
 </div>
 </div>

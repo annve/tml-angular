@@ -10,6 +10,9 @@ import { VbIfComponent } from './voorbeelden/vbif/vbif.component';
 import { VbForComponent } from './voorbeelden/vbfor/vbfor.component';
 import { VbSwitchComponent } from './voorbeelden/vbswitch/vbswitch.component';
 import { VbForuitbrComponent } from './voorbeelden/vbfor/vbforuitbr.component';
+import { VbPipesComponent } from './voorbeelden/vbpipes/vbpipes.component';
+import { ExponentialStrengthPipe } from './voorbeelden/vbpipes02/exponential-strength.pipe';
+import { OefBroodjesComponent } from './oefeningen/oefbroodjes/oefbroodjes.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { VbForuitbrComponent } from './voorbeelden/vbfor/vbforuitbr.component';
     VbIfComponent,
     VbForComponent,
     VbForuitbrComponent,
-    VbSwitchComponent
+    VbSwitchComponent,
+    VbPipesComponent,
+    ExponentialStrengthPipe,
+    OefBroodjesComponent
   ],
   imports: [
     BrowserModule,FormsModule
   ],
 
   providers: [],
-  bootstrap: [VbForuitbrComponent]
+  bootstrap: [OefBroodjesComponent]
 })
 export class AppModule { }
