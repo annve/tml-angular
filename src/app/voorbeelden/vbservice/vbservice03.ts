@@ -3,7 +3,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 // Observable => wijzigingen aan observable worden gemeld aan subscribers
 import { School } from './model';
 
