@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { Vb00Component } from './voorbeelden/vb00/vb00.component';
@@ -17,6 +18,8 @@ import { OefBroodjesComponent } from './oefeningen/oefbroodjes/oefbroodjes.compo
 import { VbAnimationComponent } from './voorbeelden/vbanimation/vb-animation/vb-animation.component';
 import { VbFormValidationComponent } from './voorbeelden/vbformvalidation/form-validation.component';
 import { OefHogerLagerComponent } from './oefeningen/oefhogerlager/oefhogerlager.component';
+import { VbHttpComponent } from './voorbeelden/vbhttp/vbhttp.component';
+import { OefhttpComponent } from './oefeningen/oefhttp/oefhttp.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +36,15 @@ import { OefHogerLagerComponent } from './oefeningen/oefhogerlager/oefhogerlager
     OefBroodjesComponent,
     VbAnimationComponent,
     VbFormValidationComponent,
-    OefHogerLagerComponent
+    OefHogerLagerComponent,
+    VbHttpComponent,
+    OefhttpComponent
   ],
   imports: [
-    BrowserModule,FormsModule, BrowserAnimationsModule
+    BrowserModule,FormsModule, BrowserAnimationsModule, HttpClientModule
   ],
 
   providers: [],
-  bootstrap: [OefHogerLagerComponent]
+  bootstrap: [OefhttpComponent]
 })
 export class AppModule { }
