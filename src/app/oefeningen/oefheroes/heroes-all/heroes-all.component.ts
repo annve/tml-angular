@@ -7,6 +7,7 @@ import { Hero } from '../hero-model/hero';
   styleUrls: ['./heroes-all.component.css']
 })
 export class HeroesAllComponent implements OnInit {
+  selectedHero: Hero = new Hero(99, "Mega Toby", true);
   constructor() { }
 
   ngOnInit() {

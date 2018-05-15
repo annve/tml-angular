@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -24,6 +24,17 @@ import { VbScholenService03 } from './voorbeelden/vbservice/vbservice03';
 import { VbServiceComponent03 } from './voorbeelden/vbservice/vbservice03.component';
 import { CurrencyService } from './oefeningen/oefcurrencyconvertor/currency.service';
 import { OefCurrencyconvertorComponent } from './oefeningen/oefcurrencyconvertor/oefcurrencyconvertor.component';
+import { HeroesAllComponent } from './oefeningen/oefheroes/heroes-all/heroes-all.component';
+import { HeroesService } from './oefeningen/oefheroes/heroes.service';
+import { HeroDetailComponent } from './oefeningen/oefheroes/hero-detail/hero-detail.component';
+import { HeroesComponent } from './oefeningen/oefheroes/heroes/heroes.component';
+import { RouterModule } from '@angular/router';
+import { Vbrouting0Component } from './voorbeelden/vbrouting/vbrouting0.component';
+import { VbRoutingModule } from './voorbeelden/vbrouting/vbrouting.module';
+import { PageNotFoundComponent } from './voorbeelden/vbrouting/page-not-found.component';
+import { VbroutingComponent } from './voorbeelden/vbrouting/vbrouting.component';
+import { VbDirectiveComponent } from './voorbeelden/vbdirective/vbdirective.component';
+import { HighlightDirective } from './voorbeelden/vbdirective/vbdirective.directive';
 
 @NgModule({
   declarations: [
@@ -43,13 +54,22 @@ import { OefCurrencyconvertorComponent } from './oefeningen/oefcurrencyconvertor
     OefHogerLagerComponent,
     VbHttpComponent,
     OefhttpComponent,
-    OefCurrencyconvertorComponent
+    OefCurrencyconvertorComponent,
+    HeroesAllComponent,
+    HeroDetailComponent,
+    HeroesComponent,
+    Vbrouting0Component,
+    PageNotFoundComponent,
+    VbroutingComponent,
+    VbDirectiveComponent,
+    HighlightDirective
   ],
   imports: [
-    BrowserModule,FormsModule, BrowserAnimationsModule, HttpClientModule
+    BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
+    VbRoutingModule
   ],
 
-  providers: [CurrencyService],
-  bootstrap: [OefCurrencyconvertorComponent]
+  providers: [HeroesService],
+  bootstrap: [VbDirectiveComponent]
 })
 export class AppModule { }

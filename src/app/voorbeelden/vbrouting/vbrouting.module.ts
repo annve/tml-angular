@@ -21,10 +21,12 @@ const appRoutes: Routes = [
     path: 'vb02',
     component: VbIfComponent
   },
+  /*
   {
     path: 'routing/:id',
     component: VbroutingReqparamComponent
-  },
+  }
+  ,*/
   { 
     path: '',   // start path
     redirectTo: '/heroes',  // REDIRECT
