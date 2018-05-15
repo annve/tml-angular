@@ -4,7 +4,6 @@
 // service geeft array met "zelf gemaakte" School objecten
 
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { School } from './model';
 
 // Injectable => client moet object niet zelf maken
@@ -24,7 +23,7 @@ export class VbScholenService01 {
         return this.SECUNDAIRE_SCHOLEN;
     }
 
-    constructor(private http: HttpClient) {
+    constructor() {
     }
 }
 

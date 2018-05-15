@@ -1,0 +1,10 @@
+<h1>{{ title}}</h1>
+<input #txtBedrag type="number" [(ngModel)]="bedrag" (focus)="txtBedrag.select();">
+<select [(ngModel)]="bronMunt">
+  <option *ngFor="let munt of munteenheden" >{{ munt }}</option>
+</select>
+<button [disabled]="bronMunt==doelMunt  || bedrag == 0" (click)="converteer();txtBedrag.focus();">Converteer</button>
+<select [(ngModel)]="doelMunt">
+    <option *ngFor="let munt of munteenheden">{{ munt }}</option>
+  </select>
+<input type="text" disabled [(ngModel)]="wisselkoers">  

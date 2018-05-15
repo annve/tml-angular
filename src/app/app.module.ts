@@ -20,6 +20,10 @@ import { VbFormValidationComponent } from './voorbeelden/vbformvalidation/form-v
 import { OefHogerLagerComponent } from './oefeningen/oefhogerlager/oefhogerlager.component';
 import { VbHttpComponent } from './voorbeelden/vbhttp/vbhttp.component';
 import { OefhttpComponent } from './oefeningen/oefhttp/oefhttp.component';
+import { VbScholenService03 } from './voorbeelden/vbservice/vbservice03';
+import { VbServiceComponent03 } from './voorbeelden/vbservice/vbservice03.component';
+import { CurrencyService } from './oefeningen/oefcurrencyconvertor/currency.service';
+import { OefCurrencyconvertorComponent } from './oefeningen/oefcurrencyconvertor/oefcurrencyconvertor.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +42,14 @@ import { OefhttpComponent } from './oefeningen/oefhttp/oefhttp.component';
     VbFormValidationComponent,
     OefHogerLagerComponent,
     VbHttpComponent,
-    OefhttpComponent
+    OefhttpComponent,
+    OefCurrencyconvertorComponent
   ],
   imports: [
     BrowserModule,FormsModule, BrowserAnimationsModule, HttpClientModule
   ],
 
-  providers: [],
-  bootstrap: [OefhttpComponent]
+  providers: [CurrencyService],
+  bootstrap: [OefCurrencyconvertorComponent]
 })
 export class AppModule { }
